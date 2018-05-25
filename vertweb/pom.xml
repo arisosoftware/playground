@@ -52,6 +52,34 @@
 		</dependency>
 		<!-- end::db-deps[] -->
 
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-rx-java2</artifactId>
+			<version>${vertx.version}</version>
+		</dependency>
+
+ 
+
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-codegen</artifactId>
+			<version>${vertx.version}</version>
+		</dependency>
+		<!-- 
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-redis-client</artifactId>
+			<version>${vertx.version}</version>
+		</dependency>
+		 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.20</version>
+		</dependency>
+
+
+
 
 		<!-- tag::logger[] -->
 		<dependency>
@@ -124,7 +152,7 @@
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<manifestEntries>
 										<Main-Class>io.vertx.core.Launcher</Main-Class>
-										<Main-Verticle>com.arisosoftware.vertweb.Main</Main-Verticle>
+										<Main-Verticle>io.vertx.guides.wiki.MainVerticle</Main-Verticle>
 									</manifestEntries>
 								</transformer>
 								<transformer
@@ -167,7 +195,8 @@
 					</systemProperties>
 					<arguments>
 						<argument>run</argument>
-						<argument>com/arisosoftware/vertweb/Main.java</argument>
+
+						<argument>io/vertx/guides/wiki/MainVerticle.java</argument>
 						<!-- <argument>-cluster</argument> <argument>-cluster-host</argument> 
 							<argument>127.0.0.1</argument> -->
 					</arguments>
