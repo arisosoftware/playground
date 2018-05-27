@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.arisosoftware.vertbench;
+package com.arisosoftware.vertbench.cpu;
 
 /**
  * Murmur3 is successor to Murmur2 fast non-crytographic hash algorithms.

@@ -1,6 +1,9 @@
 package com.arisosoftware.vertbench;
 
 import io.vertx.core.AbstractVerticle;
+import io.vertx.core.Handler;
+import io.vertx.core.eventbus.EventBus;
+import io.vertx.core.eventbus.Message;
 
 /**
  * An example illustrating how worker verticles can be deployed and how to
@@ -11,19 +14,44 @@ import io.vertx.core.AbstractVerticle;
  */
 public class MainVerticle extends AbstractVerticle {
 
+	int TotalTasks = 50;
+
 	@Override
 	public void start() throws Exception {
 		System.out.println("[Main] Running in " + Thread.currentThread().getName());
-		for (int questionId = 0; questionId < 5; questionId++) {
-			vertx.eventBus().send(BenchApp.Topic, "hello world #" + questionId, r -> {
 
-				if (r.succeeded()) {
-					System.out.println("[Main] Receiving reply '" + r.result().body() + "' in "
-							+ Thread.currentThread().getName());
-				}
-			});
+		EventBus eb = vertx.eventBus();
+
+		for (int questionId = 0; questionId < TotalTasks; questionId++) {
+
+			String message = "hello world #" + questionId;
+
+			eb.send(BenchApp.Topic, message);
 
 		}
 
+		ReduceHandler reduce = new ReduceHandler();
+		reduce.total = TotalTasks;
+		
+		eb.consumer(BenchApp.TopicResult, reduce);
+
 	}
+
+	class ReduceHandler implements Handler<Message<Object>> {
+		int total;
+		@Override
+		public void handle(Message<Object> message) {
+			total--;
+			System.out.println("Receive: " + message.body());
+
+			if (total == 0) {
+				vertx.eventBus().publish(BenchApp.TopicShutdown, "shutdown");
+
+				System.exit(0);
+			}
+			 
+		}
+
+	}
+
 }
