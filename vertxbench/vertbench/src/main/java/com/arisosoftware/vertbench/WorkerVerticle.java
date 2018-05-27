@@ -31,14 +31,14 @@ public class WorkerVerticle extends AbstractVerticle {
 				int hash32 = Murmur3.hash32(Bx.getBytes());
 				if ((hash32 & HashResultMask) == HashResultPattern) {
 
-					reply = String.format("Found! [%s] + [%d] = [%X]", body, i, hash32);
+					reply = String.format("[%s] + [%d] = [%X]", body, i, hash32);
 					break;
 				}
 
 			}
 			info.Stop();
 
-			reply = String.format("Worker:%d trace:%s\nsay:%s", this.WorkerId, reply, info.Report());
+			reply = String.format("Worker:%d %s  // %s", this.WorkerId, reply, info.Report());
 
 			vertx.eventBus().send(BenchApp.TopicResult, reply);
 

@@ -1,73 +1,78 @@
 package com.arisosoftware.vertbench;
 
-import io.vertx.config.ConfigRetriever;
-import io.vertx.config.ConfigRetrieverOptions;
-import io.vertx.config.ConfigStoreOptions;
-import io.vertx.core.AsyncResult;
-import io.vertx.core.DeploymentOptions;
-import io.vertx.core.Handler;
-import io.vertx.core.Vertx;
-import io.vertx.core.json.JsonObject;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.typesafe.config.Config;
+import com.typesafe.config.ConfigFactory;
 
+import io.vertx.core.DeploymentOptions;
+import io.vertx.core.Vertx;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class BenchApp {
 
-	public static void main(String[] args) {
+	public int TotalTasks;
+	public int TotalWorkers;
+	public int WorkerPoolSize;
 
-		Vertx vertx = Vertx.vertx();
+	public int HashResultMask;
+	public int HashResultPattern;
 
-		ConfigStoreOptions fileStore = new ConfigStoreOptions().setType("file").setOptional(true);
+	public static void LoadConfig() {
 
-		ConfigRetrieverOptions options = new ConfigRetrieverOptions().addStore(fileStore);
+		// example of how system properties override; note this
+		// must be set before the config lib is used
+		System.setProperty("simple-lib.whatever", "This value comes from a system property");
 
-		ConfigRetriever retriever = ConfigRetriever.create(vertx, options);
+		// Load our own config values from the default location,
+		// application.conf
+		Config conf = ConfigFactory.load();
 
-		retriever.getConfig(ar -> {
-			JsonObject config = null;
-			if (ar.failed()) {
+		// Config defaultConfig = ConfigFactory.parseResources("defaults.conf");
+		System.out.println("The answer is: " + conf.getString("simple-app.answer"));
 
-				config = new JsonObject();
-				config.put("TotalTasks", "50");
-				config.put("TotalWorkers", "50");
-				config.put("WorkerPoolSize", "5");
-				config.put("HashResultMask", "ff_fff_000");
-				config.put("HashResultPattern", "12_300_000");
-
-				System.out.println("default config update, please restart");
-				System.exit(9);
-
-			} else {
-				config = ar.result();
-
-				int TotalTasks = config.getInteger("TotalTasks");
-				int TotalWorkers = config.getInteger("TotalWorkers");
-				int WorkerPoolSize = config.getInteger("WorkerPoolSize");
-
-				int HashResultMask = Integer.parseInt(config.getString("HashResultMask"), 16);// 0xff_fff_000;
-				int HashResultPattern = Integer.parseInt(config.getString("HashResultPattern"), 16);// 0x12_300_000
-
-				MainVerticle main = new MainVerticle();
-				main.TotalTasks = TotalTasks;
-
-				for (int no = 0; no < TotalWorkers; no++) {
-					WorkerVerticle worker = new WorkerVerticle();
-					worker.WorkerId = no;
-					worker.HashResultMask = HashResultMask;
-					worker.HashResultPattern = HashResultPattern;
-					vertx.deployVerticle(worker, new DeploymentOptions().setWorker(true).setMultiThreaded(true)
-							.setWorkerPoolSize(WorkerPoolSize));
-
-					// vertx.deployVerticle(worker);
-					// vertx.deployVerticle(worker, new DeploymentOptions().setWorker(true));
-
-				}
-
-				vertx.deployVerticle(main);
-
-			}
-		});
+		// In this simple app, we're allowing SimpleLibContext() to
 
 	}
 
+	public BenchApp() {
+		Config config = ConfigFactory.parseResources("app.config");
+		//
+		TotalTasks = config.getInt("conf.TotalTasks");
+		TotalWorkers = config.getInt("conf.TotalWorkers");
+		WorkerPoolSize = config.getInt("conf.WorkerPoolSize");
+
+		HashResultMask = Integer.parseUnsignedInt(config.getString("conf.HashResultMask").replace("_", ""), 16);// 0xff_fff_000;
+		HashResultPattern = Integer.parseUnsignedInt(config.getString("conf.HashResultPattern").replace("_", ""), 16);// 0x12_300_000
+
+	
+	}
+
+	public void Start()
+	{
+		Vertx vertx = Vertx.vertx();
+
+		MainVerticle main = new MainVerticle();
+		main.TotalTasks = this.TotalTasks;
+
+		for (int no = 0; no < this.TotalWorkers; no++) {
+			WorkerVerticle worker = new WorkerVerticle();
+			worker.WorkerId = no;
+			worker.HashResultMask = this.HashResultMask;
+			worker.HashResultPattern = this.HashResultPattern;
+			vertx.deployVerticle(worker, new DeploymentOptions().setWorker(true).setMultiThreaded(true)
+					.setWorkerPoolSize(this.WorkerPoolSize));
+
+		};
+
+		vertx.deployVerticle(main);
+	}
+	
+	public static void main(String[] args) {
+		BenchApp app = new BenchApp();
+		app.Start();
+	}
+
+	final static String ConfigName = "VertBench.json";
 	final static String Topic = "Topic";
 	final static String TopicResult = "TopicResult";
 	final static String TopicShutdown = "TopicShutdown";

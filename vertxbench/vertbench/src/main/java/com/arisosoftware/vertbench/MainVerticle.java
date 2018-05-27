@@ -15,11 +15,12 @@ import io.vertx.core.eventbus.Message;
 public class MainVerticle extends AbstractVerticle {
 
 	int TotalTasks = 50;
-
+	StopWatchInfo sw = new StopWatchInfo();
 	@Override
 	public void start() throws Exception {
 		System.out.println("[Main] Running in " + Thread.currentThread().getName());
 
+		sw.Start();
 		EventBus eb = vertx.eventBus();
 
 		for (int questionId = 0; questionId < TotalTasks; questionId++) {
@@ -29,7 +30,7 @@ public class MainVerticle extends AbstractVerticle {
 			eb.send(BenchApp.Topic, message);
 
 		}
-
+   
 		ReduceHandler reduce = new ReduceHandler();
 		reduce.total = TotalTasks;
 		
@@ -42,11 +43,14 @@ public class MainVerticle extends AbstractVerticle {
 		@Override
 		public void handle(Message<Object> message) {
 			total--;
-			System.out.println("Receive: " + message.body());
+			System.out.println("Receive: "+total+" "+ message.body());
 
 			if (total == 0) {
 				vertx.eventBus().publish(BenchApp.TopicShutdown, "shutdown");
 
+				// then print all timeinfo
+				sw.Stop();
+				System.out.println("=================\n\nTotal:"+sw.Report());
 				System.exit(0);
 			}
 			 
