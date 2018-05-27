@@ -17,25 +17,9 @@ public class BenchApp {
 	public int HashResultMask;
 	public int HashResultPattern;
 
-	public static void LoadConfig() {
-
-		// example of how system properties override; note this
-		// must be set before the config lib is used
-		System.setProperty("simple-lib.whatever", "This value comes from a system property");
-
-		// Load our own config values from the default location,
-		// application.conf
-		Config conf = ConfigFactory.load();
-
-		// Config defaultConfig = ConfigFactory.parseResources("defaults.conf");
-		System.out.println("The answer is: " + conf.getString("simple-app.answer"));
-
-		// In this simple app, we're allowing SimpleLibContext() to
-
-	}
-
+	 
 	public BenchApp() {
-		Config config = ConfigFactory.parseResources("app.config");
+		Config config = ConfigFactory.parseResources("app.conf");
 		//
 		TotalTasks = config.getInt("conf.TotalTasks");
 		TotalWorkers = config.getInt("conf.TotalWorkers");
