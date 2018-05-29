@@ -239,3 +239,83 @@ Receive: 0 Worker#5 [hello world #] + [413771] = [12300983]  // vert.x-worker-th
 Total:Main From 2018-05-28 20:20:26.915 Usage 00:02.723 
 
 
+no block
+
+[Main] Running in vert.x-eventloop-thread-0
+Receive: 19 Worker#3 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-7 From 2018-05-28 20:26:24.017 Usage 00:01.313 
+Receive: 18 Worker#2 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-0 From 2018-05-28 20:26:24.064 Usage 00:01.503 
+Receive: 17 Worker#8 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-4 From 2018-05-28 20:26:24.088 Usage 00:01.854 
+Receive: 16 Worker#5 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-2 From 2018-05-28 20:26:24.064 Usage 00:02.019 
+Receive: 15 Worker#8 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-18 From 2018-05-28 20:26:24.041 Usage 00:02.229 
+Receive: 14 Worker#7 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-10 From 2018-05-28 20:26:24.158 Usage 00:02.112 
+Receive: 13 Worker#6 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-8 From 2018-05-28 20:26:24.064 Usage 00:02.253 
+Receive: 12 Worker#4 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-9 From 2018-05-28 20:26:24.017 Usage 00:02.464 
+Receive: 11 Worker#11 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-6 From 2018-05-28 20:26:24.017 Usage 00:02.489 
+Receive: 10 Worker#2 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-13 From 2018-05-28 20:26:24.017 Usage 00:02.536 
+Receive: 9 Worker#9 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-1 From 2018-05-28 20:26:24.088 Usage 00:02.512 
+Receive: 8 Worker#10 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-19 From 2018-05-28 20:26:24.064 Usage 00:02.583 
+Receive: 7 Worker#6 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-14 From 2018-05-28 20:26:24.064 Usage 00:02.583 
+Receive: 6 Worker#9 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-16 From 2018-05-28 20:26:24.064 Usage 00:02.653 
+Receive: 5 Worker#7 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-15 From 2018-05-28 20:26:24.017 Usage 00:02.864 
+Receive: 4 Worker#0 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-17 From 2018-05-28 20:26:24.064 Usage 00:02.841 
+Receive: 3 Worker#5 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-12 From 2018-05-28 20:26:24.017 Usage 00:02.911 
+Receive: 2 Worker#0 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-3 From 2018-05-28 20:26:24.088 Usage 00:02.863 
+Receive: 1 Worker#1 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-5 From 2018-05-28 20:26:24.017 Usage 00:02.958 
+Receive: 0 Worker#10 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-11 From 2018-05-28 20:26:24.135 Usage 00:02.840 
+=================
+
+Total:Main From 2018-05-28 20:26:23.991 Usage 00:02.984 
+[Main] Running in vert.x-eventloop-thread-0
+Receive: 19 Worker#3 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-10 From 2018-05-28 20:27:02.869 Usage 00:01.219 
+Receive: 18 Worker#1 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-8 From 2018-05-28 20:27:02.869 Usage 00:01.525 
+Receive: 17 Worker#4 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-6 From 2018-05-28 20:27:02.823 Usage 00:01.864 
+Receive: 16 Worker#8 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-9 From 2018-05-28 20:27:02.799 Usage 00:01.888 
+Receive: 15 Worker#2 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-7 From 2018-05-28 20:27:02.940 Usage 00:01.771 
+Receive: 14 Worker#3 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-19 From 2018-05-28 20:27:02.963 Usage 00:01.888 
+Receive: 13 Worker#4 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-15 From 2018-05-28 20:27:02.799 Usage 00:02.099 
+Receive: 12 Worker#0 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-3 From 2018-05-28 20:27:02.940 Usage 00:01.958 
+Receive: 11 Worker#11 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-16 From 2018-05-28 20:27:02.776 Usage 00:02.193 
+Receive: 10 Worker#2 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-13 From 2018-05-28 20:27:02.752 Usage 00:02.217 
+Receive: 9 Worker#11 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-0 From 2018-05-28 20:27:02.846 Usage 00:02.216 
+Receive: 8 Worker#10 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-1 From 2018-05-28 20:27:02.799 Usage 00:02.263 
+Receive: 7 Worker#5 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-11 From 2018-05-28 20:27:02.776 Usage 00:02.310 
+Receive: 6 Worker#9 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-17 From 2018-05-28 20:27:02.799 Usage 00:02.287 
+Receive: 5 Worker#1 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-18 From 2018-05-28 20:27:02.776 Usage 00:02.333 
+Receive: 4 Worker#6 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-14 From 2018-05-28 20:27:02.752 Usage 00:02.428 
+Receive: 3 Worker#6 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-5 From 2018-05-28 20:27:02.799 Usage 00:02.405 
+Receive: 2 Worker#0 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-12 From 2018-05-28 20:27:02.751 Usage 00:02.500 
+Receive: 1 Worker#9 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-2 From 2018-05-28 20:27:02.846 Usage 00:02.405 
+Receive: 0 Worker#7 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-4 From 2018-05-28 20:27:02.752 Usage 00:02.546 
+=================
+
+Total:Main From 2018-05-28 20:27:02.746 Usage 00:02.552 
+
+blocking:
+
+[Main] Running in vert.x-eventloop-thread-0
+Receive: 19 Worker#5 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-5 From 2018-05-28 20:27:39.256 Usage 00:00.778 
+Receive: 18 Worker#9 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-14 From 2018-05-28 20:27:39.256 Usage 00:00.942 
+Receive: 17 Worker#1 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-1 From 2018-05-28 20:27:39.256 Usage 00:01.153 
+Receive: 16 Worker#4 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-11 From 2018-05-28 20:27:39.256 Usage 00:01.176 
+Receive: 15 Worker#8 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-8 From 2018-05-28 20:27:39.256 Usage 00:01.201 
+Receive: 14 Worker#3 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-9 From 2018-05-28 20:27:39.256 Usage 00:01.389 
+Receive: 13 Worker#11 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-0 From 2018-05-28 20:27:39.256 Usage 00:01.459 
+Receive: 12 Worker#5 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-5 From 2018-05-28 20:27:39.307 Usage 00:01.502 
+Receive: 11 Worker#1 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-1 From 2018-05-28 20:27:39.378 Usage 00:01.595 
+Receive: 10 Worker#2 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-19 From 2018-05-28 20:27:39.256 Usage 00:01.717 
+Receive: 9 Worker#9 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-14 From 2018-05-28 20:27:39.256 Usage 00:01.904 
+Receive: 8 Worker#10 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-10 From 2018-05-28 20:27:39.256 Usage 00:02.099 
+Receive: 7 Worker#8 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-8 From 2018-05-28 20:27:39.307 Usage 00:02.048 
+Receive: 6 Worker#0 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-17 From 2018-05-28 20:27:39.256 Usage 00:02.146 
+Receive: 5 Worker#11 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-0 From 2018-05-28 20:27:39.401 Usage 00:02.001 
+Receive: 4 Worker#7 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-7 From 2018-05-28 20:27:39.256 Usage 00:02.170 
+Receive: 3 Worker#6 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-2 From 2018-05-28 20:27:39.256 Usage 00:02.193 
+Receive: 2 Worker#2 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-19 From 2018-05-28 20:27:39.378 Usage 00:02.213 
+Receive: 1 Worker#0 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-17 From 2018-05-28 20:27:39.256 Usage 00:02.429 
+Receive: 0 Worker#7 [hello world #] + [413771] = [12300983]  // vert.x-worker-thread-7 From 2018-05-28 20:27:39.378 Usage 00:02.354 
+=================
+
+Total:Main From 2018-05-28 20:27:39.256 Usage 00:02.476 
+
+
+

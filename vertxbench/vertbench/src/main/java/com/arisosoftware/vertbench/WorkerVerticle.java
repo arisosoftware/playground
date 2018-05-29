@@ -14,42 +14,54 @@ public class WorkerVerticle extends AbstractVerticle {
 	public int HashResultMask;
 	public int HashResultPattern;
 
+	String ResolveTheHashQuestion(StopWatchInfo info, String body) {
+		String reply = "";
+		// Do the blocking operation in here
+		info.Message = Thread.currentThread().getName();
+		for (int i = 0; i < 100000000; i++) {
+			String Bx = body + i;
+
+			int hash32 = Murmur3.hash32(Bx.getBytes());
+			if ((hash32 & HashResultMask) == HashResultPattern) {
+				reply = String.format("[%s] + [%d] = [%X]", body, i, hash32);
+				break;
+			}
+		}
+		info.Stop();
+		reply = String.format("Worker#%d %s  // %s", this.WorkerId, reply, info.Report());
+		return reply;
+	}
+
 	@Override
 	public void start() throws Exception {
-
+		boolean ExecuteBlockingFlag = true;
 		vertx.eventBus().<String>consumer(BenchApp.Topic, message -> {
 			StopWatchInfo info = new StopWatchInfo();
 			String body = message.body();
 
-			vertx.<String>executeBlocking(future -> {
-				String reply = "";
-				// Do the blocking operation in here
-				info.Message =    Thread.currentThread().getName()  ;
-				for (int i = 0; i < 100000000; i++) {
-					String Bx = body + i;
+			if (ExecuteBlockingFlag) {
 
-					int hash32 = Murmur3.hash32(Bx.getBytes());
-					if ((hash32 & HashResultMask) == HashResultPattern) {
-						reply = String.format("[%s] + [%d] = [%X]", body, i, hash32);
-						break;
+				vertx.<String>executeBlocking(future -> {
+					future.complete(ResolveTheHashQuestion(info, body));
+				}, res -> {
+					if (res.succeeded()) {
+						vertx.eventBus().send(BenchApp.TopicResult, res.result());
+					} else {
+						vertx.eventBus().send(BenchApp.TopicResult, res.cause());
 					}
-				}
-				info.Stop();
-				reply = String.format("Worker#%d %s  // %s", this.WorkerId, reply, info.Report());
-				future.complete(reply);
-			}, res -> {
-				if (res.succeeded()) {
-					vertx.eventBus().send(BenchApp.TopicResult, res.result());
-				} else {
-					vertx.eventBus().send(BenchApp.TopicResult, res.cause());
-				}
-			});
+				});
+			} else
+
+			{
+				vertx.eventBus().send(BenchApp.TopicResult, ResolveTheHashQuestion(info, body));
+			}
 
 		});
 
 		vertx.eventBus().<String>consumer(BenchApp.TopicShutdown, message -> {
 			vertx.undeploy(this.deploymentID());
-			//System.out.println("bye bye. from vertx:" + this.deploymentID() + " WorkerId:" + WorkerId);
+			// System.out.println("bye bye. from vertx:" + this.deploymentID() + "
+			// WorkerId:" + WorkerId);
 		});
 
 	}
