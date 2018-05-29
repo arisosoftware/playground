@@ -319,3 +319,50 @@ Total:Main From 2018-05-28 20:27:39.256 Usage 00:02.476
 
 
 
+ Worker#8 [hello world #] + [413771] = [12300983]  // Thread-0 From 2018-05-28 22:45:34.126 Usage 00:00.359 
+Worker#19 [hello world #] + [413771] = [12300983]  // Thread-11 From 2018-05-28 22:45:34.141 Usage 00:00.879 
+Worker#15 [hello world #] + [413771] = [12300983]  // Thread-7 From 2018-05-28 22:45:34.141 Usage 00:00.879 
+Worker#27 [hello world #] + [413771] = [12300983]  // Thread-19 From 2018-05-28 22:45:34.157 Usage 00:00.942 
+Worker#9 [hello world #] + [413771] = [12300983]  // Thread-1 From 2018-05-28 22:45:34.126 Usage 00:01.067 
+Worker#20 [hello world #] + [413771] = [12300983]  // Thread-12 From 2018-05-28 22:45:34.141 Usage 00:01.173 
+Worker#21 [hello world #] + [413771] = [12300983]  // Thread-13 From 2018-05-28 22:45:34.157 Usage 00:01.157 
+Worker#13 [hello world #] + [413771] = [12300983]  // Thread-5 From 2018-05-28 22:45:34.141 Usage 00:01.220 
+Worker#25 [hello world #] + [413771] = [12300983]  // Thread-17 From 2018-05-28 22:45:34.157 Usage 00:01.251 
+Worker#11 [hello world #] + [413771] = [12300983]  // Thread-3 From 2018-05-28 22:45:34.126 Usage 00:01.282 
+Worker#17 [hello world #] + [413771] = [12300983]  // Thread-9 From 2018-05-28 22:45:34.141 Usage 00:01.345 
+Worker#24 [hello world #] + [413771] = [12300983]  // Thread-16 From 2018-05-28 22:45:34.157 Usage 00:01.345 
+Worker#23 [hello world #] + [413771] = [12300983]  // Thread-15 From 2018-05-28 22:45:34.157 Usage 00:01.376 
+Worker#18 [hello world #] + [413771] = [12300983]  // Thread-10 From 2018-05-28 22:45:34.141 Usage 00:01.439 
+Worker#12 [hello world #] + [413771] = [12300983]  // Thread-4 From 2018-05-28 22:45:34.141 Usage 00:01.500 
+Worker#26 [hello world #] + [413771] = [12300983]  // Thread-18 From 2018-05-28 22:45:34.157 Usage 00:01.512 
+Worker#14 [hello world #] + [413771] = [12300983]  // Thread-6 From 2018-05-28 22:45:34.141 Usage 00:01.570 
+Worker#22 [hello world #] + [413771] = [12300983]  // Thread-14 From 2018-05-28 22:45:34.157 Usage 00:01.554 
+Worker#10 [hello world #] + [413771] = [12300983]  // Thread-2 From 2018-05-28 22:45:34.126 Usage 00:01.599 
+Worker#16 [hello world #] + [413771] = [12300983]  // Thread-8 From 2018-05-28 22:45:34.141 Usage 00:01.612 
+
+
+ThreadPool, #=3 , task 20
+
+Worker#10 [hello world #] + [413771] = [12300983]  // pool-1-thread-3 From 2018-05-29 09:01:08.198 Usage 00:00.188 
+Worker#9 [hello world #] + [413771] = [12300983]  // pool-1-thread-2 From 2018-05-29 09:01:08.198 Usage 00:00.219 
+Worker#8 [hello world #] + [413771] = [12300983]  // pool-1-thread-1 From 2018-05-29 09:01:08.198 Usage 00:00.235 
+Worker#9 [hello world #] + [413771] = [12300983]  // pool-1-thread-2 From 2018-05-29 09:01:08.417 Usage 00:00.156 
+Worker#10 [hello world #] + [413771] = [12300983]  // pool-1-thread-3 From 2018-05-29 09:01:08.401 Usage 00:00.219 
+Worker#8 [hello world #] + [413771] = [12300983]  // pool-1-thread-1 From 2018-05-29 09:01:08.433 Usage 00:00.265 
+Worker#10 [hello world #] + [413771] = [12300983]  // pool-1-thread-3 From 2018-05-29 09:01:08.620 Usage 00:00.203 
+Worker#9 [hello world #] + [413771] = [12300983]  // pool-1-thread-2 From 2018-05-29 09:01:08.573 Usage 00:00.266 
+Worker#8 [hello world #] + [413771] = [12300983]  // pool-1-thread-1 From 2018-05-29 09:01:08.698 Usage 00:00.203 
+Worker#10 [hello world #] + [413771] = [12300983]  // pool-1-thread-3 From 2018-05-29 09:01:08.823 Usage 00:00.142 
+Worker#8 [hello world #] + [413771] = [12300983]  // pool-1-thread-1 From 2018-05-29 09:01:08.901 Usage 00:00.204 
+Worker#9 [hello world #] + [413771] = [12300983]  // pool-1-thread-2 From 2018-05-29 09:01:08.839 Usage 00:00.298 
+Worker#10 [hello world #] + [413771] = [12300983]  // pool-1-thread-3 From 2018-05-29 09:01:08.965 Usage 00:00.250 
+Worker#8 [hello world #] + [413771] = [12300983]  // pool-1-thread-1 From 2018-05-29 09:01:09.105 Usage 00:00.188 
+Worker#9 [hello world #] + [413771] = [12300983]  // pool-1-thread-2 From 2018-05-29 09:01:09.137 Usage 00:00.265 
+Worker#10 [hello world #] + [413771] = [12300983]  // pool-1-thread-3 From 2018-05-29 09:01:09.215 Usage 00:00.265 
+Worker#8 [hello world #] + [413771] = [12300983]  // pool-1-thread-1 From 2018-05-29 09:01:09.293 Usage 00:00.250 
+Worker#9 [hello world #] + [413771] = [12300983]  // pool-1-thread-2 From 2018-05-29 09:01:09.402 Usage 00:00.188 
+Worker#10 [hello world #] + [413771] = [12300983]  // pool-1-thread-3 From 2018-05-29 09:01:09.480 Usage 00:00.172 
+Worker#8 [hello world #] + [413771] = [12300983]  // pool-1-thread-1 From 2018-05-29 09:01:09.543 Usage 00:00.156 
+
+
+
