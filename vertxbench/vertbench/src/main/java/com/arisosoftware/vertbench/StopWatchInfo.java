@@ -10,11 +10,11 @@ public class StopWatchInfo {
 	public long Duration;
 	public String Message;
 
-	static DateTimeFormatter formatter1 =      DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")
-            .withZone(ZoneId.systemDefault());
+	static DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")
+			.withZone(ZoneId.systemDefault());
 
-	static DateTimeFormatter formatter2 =      DateTimeFormatter.ofPattern("mm:ss.SSS")
-            .withZone(ZoneId.systemDefault());
+	static DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("mm:ss.SSS").withZone(ZoneId.systemDefault());
+
 	public StopWatchInfo() {
 		Start();
 	}
@@ -32,7 +32,6 @@ public class StopWatchInfo {
 		Instant start = Instant.ofEpochMilli(StartTimeMillis);
 		Instant duration = Instant.ofEpochMilli(Duration);
 
-		return String.format("Start time %s Duration %s", formatter1.format(start)
-				, formatter2.format(duration));
+		return String.format("%s From %s Usage %s ", this.Message, formatter1.format(start), formatter2.format(duration));
 	}
 }

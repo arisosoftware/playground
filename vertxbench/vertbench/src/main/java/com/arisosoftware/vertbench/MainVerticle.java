@@ -19,13 +19,13 @@ public class MainVerticle extends AbstractVerticle {
 	@Override
 	public void start() throws Exception {
 		System.out.println("[Main] Running in " + Thread.currentThread().getName());
-
+		sw.Message="Main";
 		sw.Start();
 		EventBus eb = vertx.eventBus();
 
 		for (int questionId = 0; questionId < TotalTasks; questionId++) {
 
-			String message = "hello world #" + questionId;
+			String message = "hello world #" ;//+ questionId;
 
 			eb.send(BenchApp.Topic, message);
 
