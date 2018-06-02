@@ -1,0 +1,34 @@
+= Cheatsheets
+
+[[TodoEntity]]
+== TodoEntity
+
+++++
+ Todo Entity
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[completed]]`completed`|`Boolean`|-
+|[[id]]`id`|`Number (int)`|-
+|[[order]]`order`|`Number (Integer)`|-
+|[[title]]`title`|`String`|-
+|[[url]]`url`|`String`|-
+|===
+
+[[WikiPageEntity]]
+== WikiPageEntity
+
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`id`|`Number (int)`|-
+|[[markdownText]]`markdownText`|`String`|-
+|[[title]]`title`|`String`|-
+|===
+

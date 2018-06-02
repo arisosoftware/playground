@@ -44,7 +44,11 @@ import io.vertx.ext.web.templ.FreeMarkerTemplateEngine;
 public class MainVerticle extends AbstractVerticle {
 
 	// tag::sql-fields[]
-	private static final String SQL_CREATE_PAGES_TABLE = "create table if not exists Pages (Id integer identity primary key, Name varchar(255) unique, Content clob)";
+	private static final String SQL_CREATE_PAGES_TABLE = "create table if not exists Pages "
+			+ "(Id integer identity primary key, "
+			+ "Name varchar(255) unique, "
+			+ "Content clob)";
+	
 	private static final String SQL_GET_PAGE = "select Id, Content from Pages where Name = ?"; // <1>
 	private static final String SQL_CREATE_PAGE = "insert into Pages values (NULL, ?, ?)";
 	private static final String SQL_SAVE_PAGE = "update Pages set Content = ? where Id = ?";
