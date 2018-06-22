@@ -40,8 +40,13 @@
 		<dependency>
 			<groupId>io.vertx</groupId>
 			<artifactId>vertx-core</artifactId>
-
 		</dependency>
+
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-hazelcast</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>com.typesafe</groupId>
 			<artifactId>config</artifactId>
@@ -75,10 +80,9 @@
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<manifestEntries>
 										<Main-Class>com.arisosoftware.vertbench.BenchApp</Main-Class>
-									 
 									</manifestEntries>
 								</transformer>
-								 
+
 							</transformers>
 							<artifactSet></artifactSet>
 							<outputFile>${project.build.directory}/vxbench-${project.version}-fat.jar</outputFile>
