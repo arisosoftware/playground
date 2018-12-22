@@ -24,15 +24,16 @@ class MultithreadingDemo extends Thread {
 		this.info = info;
 		this.body = body;
 		HashResultMask = 0xfffff000;
-		HashResultPattern =0x12300000;
-	} 
+		HashResultPattern = 0x12300000;
+	}
+
 	public void run() {
 		try {
 			// Displaying the thread that is running
 			this.info.Start();
 			String message = ResolveTheHashQuestion();
-			 
-			System.out.println(String.format("%s", message ));
+
+			System.out.println(String.format("%s", message));
 		} catch (Exception e) {
 			// Throwing an exception
 			System.out.println("Exception is caught");

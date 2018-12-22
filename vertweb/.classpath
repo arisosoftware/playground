@@ -29,9 +29,12 @@
 	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/bigdata/jarlib/sqlite-jdbc-3.8.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/bigdata/jarlib/super-csv-2.2.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

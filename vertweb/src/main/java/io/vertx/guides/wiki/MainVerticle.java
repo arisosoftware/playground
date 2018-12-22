@@ -36,11 +36,11 @@ import io.vertx.ext.sql.SQLConnection;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
 import io.vertx.ext.web.handler.BodyHandler;
-import io.vertx.ext.web.templ.FreeMarkerTemplateEngine;
 
 /**
  * @author <a href="https://julien.ponge.org/">Julien Ponge</a>
  */
+@SuppressWarnings("deprecation")
 public class MainVerticle extends AbstractVerticle {
 
 	// tag::sql-fields[]
@@ -158,7 +158,7 @@ public class MainVerticle extends AbstractVerticle {
 	// end::pageCreateHandler[]
 
 	// tag::indexHandler[]
-	private final FreeMarkerTemplateEngine templateEngine = FreeMarkerTemplateEngine.create();
+//	private final FreeMarkerTemplateEngine templateEngine = FreeMarkerTemplateEngine.create();
 
 	private void indexHandler(RoutingContext context) {
 		dbClient.getConnection(car -> {
@@ -174,14 +174,14 @@ public class MainVerticle extends AbstractVerticle {
 
 						context.put("title", "Wiki home"); // <2>
 						context.put("pages", pages);
-						templateEngine.render(context, "templates", "/index.ftl", ar -> { // <3>
-							if (ar.succeeded()) {
-								context.response().putHeader("Content-Type", "text/html");
-								context.response().end(ar.result()); // <4>
-							} else {
-								context.fail(ar.cause());
-							}
-						});
+//						templateEngine.render(context, "templates", "/index.ftl", ar -> { // <3>
+//							if (ar.succeeded()) {
+//								context.response().putHeader("Content-Type", "text/html");
+//								context.response().end(ar.result()); // <4>
+//							} else {
+//								context.fail(ar.cause());
+//							}
+//						});
 
 					} else {
 						context.fail(res.cause()); // <5>
@@ -254,14 +254,14 @@ public class MainVerticle extends AbstractVerticle {
 						context.put("content", Processor.process(rawContent)); // <3>
 						context.put("timestamp", new Date().toString());
 
-						templateEngine.render(context, "templates", "/page.ftl", ar -> {
-							if (ar.succeeded()) {
-								context.response().putHeader("Content-Type", "text/html");
-								context.response().end(ar.result());
-							} else {
-								context.fail(ar.cause());
-							}
-						});
+//						templateEngine.render(context, "templates", "/page.ftl", ar -> {
+//							if (ar.succeeded()) {
+//								context.response().putHeader("Content-Type", "text/html");
+//								context.response().end(ar.result());
+//							} else {
+//								context.fail(ar.cause());
+//							}
+//						});
 					} else {
 						context.fail(fetch.cause());
 					}

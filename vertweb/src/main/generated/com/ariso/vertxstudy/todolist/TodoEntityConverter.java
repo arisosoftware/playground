@@ -17,7 +17,6 @@
 package com.ariso.vertxstudy.todolist;
 
 import io.vertx.core.json.JsonObject;
-import io.vertx.core.json.JsonArray;
 
 /**
  * Converter for {@link com.ariso.vertxstudy.todolist.TodoEntity}.

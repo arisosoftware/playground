@@ -57,8 +57,7 @@ public class Murmur3 {
 	/**
 	 * Murmur3 32-bit variant.
 	 *
-	 * @param data
-	 *            - input byte array
+	 * @param data - input byte array
 	 * @return - hashcode
 	 */
 	public static int hash32(byte[] data) {
@@ -68,12 +67,9 @@ public class Murmur3 {
 	/**
 	 * Murmur3 32-bit variant.
 	 *
-	 * @param data
-	 *            - input byte array
-	 * @param length
-	 *            - length of array
-	 * @param seed
-	 *            - seed. (default 0)
+	 * @param data   - input byte array
+	 * @param length - length of array
+	 * @param seed   - seed. (default 0)
 	 * @return - hashcode
 	 */
 	public static int hash32(byte[] data, int length, int seed) {
@@ -127,8 +123,7 @@ public class Murmur3 {
 	 * Murmur3 64-bit variant. This is essentially MSB 8 bytes of Murmur3 128-bit
 	 * variant.
 	 *
-	 * @param data
-	 *            - input byte array
+	 * @param data - input byte array
 	 * @return - hashcode
 	 */
 	public static long hash64(byte[] data) {
@@ -143,12 +138,9 @@ public class Murmur3 {
 	 * Murmur3 64-bit variant. This is essentially MSB 8 bytes of Murmur3 128-bit
 	 * variant.
 	 *
-	 * @param data
-	 *            - input byte array
-	 * @param length
-	 *            - length of array
-	 * @param seed
-	 *            - seed. (default is 0)
+	 * @param data   - input byte array
+	 * @param length - length of array
+	 * @param seed   - seed. (default is 0)
 	 * @return - hashcode
 	 */
 	public static long hash64(byte[] data, int offset, int length, int seed) {
@@ -205,8 +197,7 @@ public class Murmur3 {
 	/**
 	 * Murmur3 128-bit variant.
 	 *
-	 * @param data
-	 *            - input byte array
+	 * @param data - input byte array
 	 * @return - hashcode (2 longs)
 	 */
 	public static long[] hash128(byte[] data) {
@@ -216,14 +207,10 @@ public class Murmur3 {
 	/**
 	 * Murmur3 128-bit variant.
 	 *
-	 * @param data
-	 *            - input byte array
-	 * @param offset
-	 *            - the first element of array
-	 * @param length
-	 *            - length of array
-	 * @param seed
-	 *            - seed. (default is 0)
+	 * @param data   - input byte array
+	 * @param offset - the first element of array
+	 * @param length - length of array
+	 * @param seed   - seed. (default is 0)
 	 * @return - hashcode (2 longs)
 	 */
 	public static long[] hash128(byte[] data, int offset, int length, int seed) {

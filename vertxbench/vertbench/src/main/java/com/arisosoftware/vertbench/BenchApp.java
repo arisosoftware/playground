@@ -17,7 +17,6 @@ public class BenchApp {
 	public int HashResultMask;
 	public int HashResultPattern;
 
-	 
 	public BenchApp() {
 		Config config = ConfigFactory.parseResources("app.conf");
 		//
@@ -28,11 +27,9 @@ public class BenchApp {
 		HashResultMask = Integer.parseUnsignedInt(config.getString("conf.HashResultMask").replace("_", ""), 16);// 0xff_fff_000;
 		HashResultPattern = Integer.parseUnsignedInt(config.getString("conf.HashResultPattern").replace("_", ""), 16);// 0x12_300_000
 
-	
 	}
 
-	public void Start()
-	{
+	public void Start() {
 		Vertx vertx = Vertx.vertx();
 
 		MainVerticle main = new MainVerticle();
@@ -46,11 +43,12 @@ public class BenchApp {
 			vertx.deployVerticle(worker, new DeploymentOptions().setWorker(true).setMultiThreaded(true)
 					.setWorkerPoolSize(this.WorkerPoolSize));
 
-		};
+		}
+		;
 
 		vertx.deployVerticle(main);
 	}
-	
+
 	public static void main(String[] args) {
 		BenchApp app = new BenchApp();
 		app.Start();

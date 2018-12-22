@@ -32,6 +32,7 @@ public class StopWatchInfo {
 		Instant start = Instant.ofEpochMilli(StartTimeMillis);
 		Instant duration = Instant.ofEpochMilli(Duration);
 
-		return String.format("%s From %s Usage %s ", this.Message, formatter1.format(start), formatter2.format(duration));
+		return String.format("%s From %s Usage %s ", this.Message, formatter1.format(start),
+				formatter2.format(duration));
 	}
 }

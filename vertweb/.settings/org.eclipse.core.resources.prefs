@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/ariso/blockchain/Message.java=UTF-8
+encoding//src/main/java/com/ariso/blockchain/package-info.java=UTF-8
+encoding//src/main/java/com/ariso/jtrade/FastJsonLoadTD.java=UTF-8
+encoding//src/main/java/com/ariso/vhmm/Observation.java=UTF-8
+encoding//src/main/java/com/ariso/vhmm/State.java=UTF-8
+encoding//src/main/java/com/hankcs/algorithm/Viterbi.java=UTF-8
+encoding//src/main/java/reference_1/ClassDictionary.java=UTF-8
+encoding//src/main/java/reference_1/HiddenStates.java=UTF-8
+separateDerivedEncodings=true

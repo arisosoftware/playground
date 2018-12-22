@@ -17,7 +17,6 @@
 package com.ariso.vertxwiki;
 
 import io.vertx.core.json.JsonObject;
-import io.vertx.core.json.JsonArray;
 
 /**
  * Converter for {@link com.ariso.vertxwiki.WikiPageEntity}.

@@ -10,9 +10,11 @@ import java.util.function.Function;
 import io.reactivex.Completable;
 import io.reactivex.Maybe;
 import io.reactivex.Single;
+import io.vertx.core.Handler;
 import io.vertx.core.http.HttpMethod;
 import io.vertx.core.json.JsonObject;
 import io.vertx.reactivex.core.AbstractVerticle;
+import io.vertx.reactivex.core.http.HttpServerRequest;
 import io.vertx.reactivex.core.http.HttpServerResponse;
 import io.vertx.reactivex.ext.web.Router;
 import io.vertx.reactivex.ext.web.RoutingContext;
@@ -38,7 +40,9 @@ public abstract class RestfulApiVerticle extends AbstractVerticle {
      * @return asynchronous result
      */
     protected Completable createHttpServer(Router router, String host, int port) {
-        return vertx.createHttpServer().requestHandler(router::accept).rxListen(port, host).toCompletable();
+        Handler<HttpServerRequest> handler2 = router::accept;
+ 
+        return vertx.createHttpServer().requestHandler(handler2).rxListen(port, host).toCompletable();
     }
 
     /**
