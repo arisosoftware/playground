@@ -1,4 +1,4 @@
-package com.arisosoftware.simulator;
+package com.arisosoftware.simulator.cell;
 
 public interface MessageKey {
     String MSG_Step = "Step";

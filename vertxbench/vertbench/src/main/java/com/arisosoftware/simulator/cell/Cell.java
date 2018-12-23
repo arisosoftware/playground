@@ -1,4 +1,4 @@
-package com.arisosoftware.simulator;
+package com.arisosoftware.simulator.cell;
 
 import java.util.Random;
 
