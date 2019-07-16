@@ -1,7 +1,6 @@
 package prepare.array;
 //https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
 
-  
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -12,66 +11,60 @@ import java.util.regex.*;
 
 public class LeftRotation {
 
-    // Complete the rotLeft function below.
-    static int[] rotLeft(int[] a, int d) {
-    	int len = a.length;
-    	int newStartIdx = d % len;
-    	
-    	int newArray[] = new int[len];
-    	
-    	if (newStartIdx==0)
-    		return a;
-    	
-    	int y=0;
-    	for(int x= newStartIdx;x<len;x++)
-    	{
-    		newArray[y] = a[x];
-    		y++;
-    	}
-    	
-    	for (int x=0;x<newStartIdx;x++)
-    	{
-    		newArray[y] = a[x];
-    		y++;
-    	}
-    	return newArray;
-    }
+	// Complete the rotLeft function below.
+	static int[] rotLeft(int[] a, int d) {
+		int len = a.length;
+		int newStartIdx = d % len;
 
-    
-    public static void main(String[] args) throws IOException {
-    	Scanner   scanner = new Scanner(
-    			"5 4\n" + 
-    			"1 2 3 4 5"
-    			);
-    	
-        String[] nd = scanner.nextLine().split(" ");
+		int newArray[] = new int[len];
 
-        int n = Integer.parseInt(nd[0]);
+		if (newStartIdx == 0)
+			return a;
 
-        int d = Integer.parseInt(nd[1]);
+		int y = 0;
+		for (int x = newStartIdx; x < len; x++) {
+			newArray[y] = a[x];
+			y++;
+		}
 
-        int[] a = new int[n];
+		for (int x = 0; x < newStartIdx; x++) {
+			newArray[y] = a[x];
+			y++;
+		}
+		return newArray;
+	}
 
-        String[] aItems = scanner.nextLine().split(" ");
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+	public static void main(String[] args) throws IOException {
+		Scanner scanner = new Scanner("5 4\n" + "1 2 3 4 5");
 
-        for (int i = 0; i < n; i++) {
-            int aItem = Integer.parseInt(aItems[i]);
-            a[i] = aItem;
-        }
+		String[] nd = scanner.nextLine().split(" ");
 
-        int[] result = rotLeft(a, d);
+		int n = Integer.parseInt(nd[0]);
 
-        for (int i = 0; i < result.length; i++) {
-            System.out.print(String.valueOf(result[i]));
+		int d = Integer.parseInt(nd[1]);
 
-            if (i != result.length - 1) {
-            	System.out.print(" ");
-            }
-        }
+		int[] a = new int[n];
 
-        System.out.println();
+		String[] aItems = scanner.nextLine().split(" ");
+		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        scanner.close();
-    }
+		for (int i = 0; i < n; i++) {
+			int aItem = Integer.parseInt(aItems[i]);
+			a[i] = aItem;
+		}
+
+		int[] result = rotLeft(a, d);
+
+		for (int i = 0; i < result.length; i++) {
+			System.out.print(String.valueOf(result[i]));
+
+			if (i != result.length - 1) {
+				System.out.print(" ");
+			}
+		}
+
+		System.out.println();
+
+		scanner.close();
+	}
 }
