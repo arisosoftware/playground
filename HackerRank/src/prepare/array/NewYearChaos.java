@@ -79,7 +79,6 @@ public class NewYearChaos {
 	public static void main(String[] args) {
 
 		Scanner scanner = // new Scanner("2\n" + "5\n" + "2 1 5 3 4\n" + "5\n" + "2 5 1 3 4\n\n");
-
 				new Scanner("2\n" + "8\n" + "5 1 2 3 7 8 6 4\n" + "8\n" + "1 2 5 3 7 8 6 4");
 
 		int t = scanner.nextInt();
