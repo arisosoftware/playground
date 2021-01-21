@@ -1,0 +1,612 @@
+@cescoffier
+cescoffier forked cescoffier/quarkus-platform from quarkusio/quarkus-platform 8 hours ago
+quarkusio/quarkus-platform
+Quarkus Platform aggregates extensions from Quarkus Core and those developed by the community into a single compatible and versioned set that appli…
+
+Updated Oct 10
+
+@fmirus
+fmirus starred 2 repositories  16 hours ago
+yzhao062/pyod
+A Python Toolbox for Scalable Outlier Detection (Anomaly Detection)
+
+ Python  2.5k  6 issues need help Updated Oct 10
+
+@photonstorm
+photonstorm starred HarryStevens/geometric 17 hours ago
+HarryStevens/geometric
+A JavaScript library for doing geometry.
+
+ JavaScript  324  Updated Oct 10
+
+@extreme-assistant
+extreme-assistant starred extreme-assistant/AI-job-ads 17 hours ago
+extreme-assistant/AI-job-ads
+腾讯/百度/华为/商汤等AI公司算法岗内推汇总（含校招、社招、实习生岗）
+
+6  Updated Oct 10
+
+@extreme-assistant
+extreme-assistant created a repository extreme-assistant/AI-job-ads 18 hours ago
+extreme-assistant/AI-job-ads
+腾讯/百度/华为/商汤等AI公司算法岗内推汇总（含校招、社招、实习生岗）
+
+Updated Oct 10
+
+@abel533
+abel533 forked abel533/system-charts from rancher/system-charts 21 hours ago
+rancher/system-charts
+ Smarty  16  Updated Oct 10
+
+@jmecn
+jmecn starred DesertCookie/GLFW-in-a-Nutshell 23 hours ago
+DesertCookie/GLFW-in-a-Nutshell
+In-depth guides and examples of GLFW in multiple (programming) languages.
+
+5  Updated Oct 9
+
+@lemire
+lemire starred fwessels/simdjson-go yesterday
+fwessels/simdjson-go
+Golang port of simdjson
+
+ Go  24  Updated Oct 10
+
+@jindongwang
+jindongwang starred Newbeeer/L_DMI 2 days ago
+Newbeeer/L_DMI
+Code for NeurIPS 2019 Paper, "L_DMI: An Information-theoretic Noise-robust Loss Function"
+
+ Python  21  Updated Oct 9
+
+@jindongwang
+jindongwang started following daijifeng001 2 days ago
+daijifeng001
+Jifeng Dai daijifeng001
+6 repositories 1.4k followers
+
+@jindongwang
+jindongwang forked jindongwang/SDG4DA from timerstime/SDG4DA 2 days ago
+timerstime/SDG4DA
+Selection Distribution Generator for Domain Adaptation
+
+ Python  11  Updated Oct 8
+
+@jindongwang
+jindongwang starred 2 repositories  3 days ago
+MichiganCOG/ViP
+Video Platform for Action Recognition and Object Detection in Pytorch
+
+ Python  81  Updated Oct 10
+
+@Erickrus
+Erickrus created a repository Erickrus/image-stitcher 3 days ago
+Erickrus/image-stitcher
+Updated Oct 8
+
+@khairul169
+khairul169 forked khairul169/nhentai-js from cthuluhoop123/nhentai-js 3 days ago
+cthuluhoop123/nhentai-js
+nHentai wrapper for Javascript
+
+ JavaScript  5  Updated Oct 8
+
+@khairul169
+khairul169 starred cthuluhoop123/nhentai-js 3 days ago
+cthuluhoop123/nhentai-js
+nHentai wrapper for Javascript
+
+ JavaScript  5  Updated Oct 8
+
+@ypwhs
+ypwhs starred helm/helm 4 days ago
+helm/helm
+The Kubernetes Package Manager
+
+ Go  14.2k  23 issues need help Updated Oct 10
+
+@abel533
+abel533 starred java-decompiler/jd-gui 4 days ago
+java-decompiler/jd-gui
+A standalone Java Decompiler GUI
+
+ Java  7.3k  Updated Oct 10
+
+@Lakritzator
+Lakritzator starred hvanbakel/CsprojToVs2017 4 days ago
+hvanbakel/CsprojToVs2017
+Tooling for converting pre 2017 project to the new Visual Studio 2017 format.
+
+ C#  660  Updated Oct 10
+
+@chengenzhao
+chengenzhao starred OpenAPITools/openapi-generator 4 days ago
+OpenAPITools/openapi-generator
+OpenAPI Generator allows generation of API client libraries (SDK generation), server stubs, documentation and configuration automatically given an …
+
+ Java  3.4k  43 issues need help Updated Oct 10
+
+@ypwhs
+ypwhs starred MhLiao/MaskTextSpotter 5 days ago
+MhLiao/MaskTextSpotter
+A PyTorch implementation of Mask TextSpotter
+
+ Python  47  Updated Oct 10
+
+@ngaut
+ngaut starred intel-go/nff-go 5 days ago
+intel-go/nff-go
+NFF-Go -Network Function Framework for GO (former YANFF)
+
+ Go  704  1 issue needs help Updated Oct 8
+
+@photonstorm
+photonstorm starred davidkpiano/xstate 6 days ago
+davidkpiano/xstate
+State machines and statecharts for the modern web.
+
+ TypeScript  7.1k  2 issues need help Updated Oct 10
+
+@scutan90
+scutan90 forked scutan90/electronic-wechat from geeeeeeeeek/electronic-wechat 7 days ago
+geeeeeeeeek/electronic-wechat
+speech_balloon A better WeChat on macOS and Linux. Built with Electron by Zhongyi Tong.
+
+ JavaScript  13k  Updated Oct 10
+
+@scutan90
+scutan90 starred geeeeeeeeek/electronic-wechat 7 days ago
+geeeeeeeeek/electronic-wechat
+speech_balloon A better WeChat on macOS and Linux. Built with Electron by Zhongyi Tong.
+
+ JavaScript  13k  Updated Oct 10
+
+@chengenzhao
+chengenzhao starred openjdk/jfx 7 days ago
+openjdk/jfx
+https://openjdk.java.net/projects/openjfx/
+
+ C++  44  Updated Oct 10
+
+@yuandong-tian
+yuandong-tian starred facebookresearch/hydra 7 days ago
+facebookresearch/hydra
+Hydra is a framework for elegantly configuring complex applications
+
+ Python  604  1 issue needs help Updated Oct 10
+
+@xuxueli
+xuxueli starred 4 repositories  7 days ago
+xuxueli/xxl-cache
+seedling A distributed CACHE management platform.（分布式缓存管理平台XXL-CACHE）
+
+ Java  143  Updated Oct 10
+
+@kwhat
+kwhat starred shivammathur/setup-php 8 days ago
+shivammathur/setup-php
+GitHub action to setup PHP with required extensions, php.ini configuration, code-coverage support and composer
+
+ TypeScript  110  1 issue needs help Updated Oct 10
+
+@photonstorm
+photonstorm starred sporadic-labs/tile-extruder 8 days ago
+sporadic-labs/tile-extruder
+A tiny Node CLI/library to extrude tilesets to avoid bleeding issues
+
+ JavaScript  119  Updated Oct 5
+
+@kwhat
+kwhat forked kwhat/PDO from FaaPz/PDO 8 days ago
+FaaPz/PDO
+Just another PDO database library
+
+ PHP  270  2 issues need help Updated Oct 2
+
+@hugolpz
+hugolpz forked hugolpz/google-drive-recursive-ownership from davidstrauss/google-drive-recursive-ownership 8 days ago
+davidstrauss/google-drive-recursive-ownership
+Tool to recursively give away file and document ownership to another user.
+
+ Python  119  Updated Sep 30
+
+@lemire
+lemire created a repository lemire/testingmlp 9 days ago
+lemire/testingmlp
+Testing memory-level parallelism
+
+Updated Oct 6
+
+@ypwhs
+ypwhs starred jaywcjlove/github-rank 11 days ago
+jaywcjlove/github-rank
+Github 中国和全球用户排名，全球仓库 Star 最多排名。
+
+ TypeScript  675  Updated Oct 10
+
+@OuYangLiang
+OuYangLiang starred alibaba/p3c 11 days ago
+alibaba/p3c
+Alibaba Java Coding Guidelines pmd implements and IDE plugin
+
+ Java  18.4k  Updated Oct 10
+
+@jindongwang
+jindongwang starred neural-tangents/neural-tangents 11 days ago
+neural-tangents/neural-tangents
+Neural Tangents: Fast and Easy Infinite Neural Networks in Python
+
+ Jupyter Notebook  7  Updated Oct 9
+
+@jindongwang
+jindongwang starred github/CodeSearchNet 12 days ago
+github/CodeSearchNet
+Datasets, tools, and benchmarks for representation learning of code.
+
+ Jupyter Notebook  835  Updated Oct 10
+
+@jindongwang
+jindongwang starred DeepDarkFantasy20/TransferbilityFromAttributionMaps 12 days ago
+DeepDarkFantasy20/TransferbilityFromAttributionMaps
+This project provides the source code for reproducing the paper "Deep Model Transferbility from Attribution Maps", published at NeurIPS 2019.
+
+ Python  5  Updated Sep 29
+
+@ypwhs
+ypwhs starred github/CodeSearchNet 12 days ago
+github/CodeSearchNet
+Datasets, tools, and benchmarks for representation learning of code.
+
+ Jupyter Notebook  835  Updated Oct 10
+
+@ypwhs
+ypwhs starred anhkgg/SuperWeChatPC 12 days ago
+anhkgg/SuperWeChatPC
+超级微信电脑客户端，支持多开、防消息撤销、语音消息备份...开放WeChatSDK
+
+ C++  2.3k  Updated Oct 10
+
+@abel533
+abel533 starred opensagres/xdocreport 13 days ago
+opensagres/xdocreport
+XDocReport means XML Document reporting. It's Java API to merge XML document created with MS Office (docx) or OpenOffice (odt), LibreOffice (odt) w…
+
+ Java  608  Updated Oct 7
+
+@ypwhs
+ypwhs starred axi0mX/ipwndfu 13 days ago
+axi0mX/ipwndfu
+open-source jailbreaking tool for many iOS devices
+
+ Python  4.8k  Updated Oct 10
+
+@photonstorm
+photonstorm starred 2 repositories  14 days ago
+oframe/ogl
+Minimal WebGL framework
+
+ JavaScript  1k  Updated Oct 10
+
+@photonstorm
+photonstorm starred josdejong/mathjs 14 days ago
+josdejong/mathjs
+An extensive math library for JavaScript and Node.js
+
+ JavaScript  9.1k  51 issues need help Updated Oct 10
+
+@ypwhs
+ypwhs starred 2 repositories  15 days ago
+microsoft/STL
+MSVC's implementation of the C++ Standard Library.
+
+ C++  4k  2 issues need help Updated Oct 10
+
+@Lakritzator
+Lakritzator forked Lakritzator/wpf-notifyicon from hardcodet/wpf-notifyicon 15 days ago
+hardcodet/wpf-notifyicon
+NotifyIcon (aka system tray icon or taskbar icon) for the WPF platform
+
+ C#  55  Updated Oct 10
+
+@ypwhs
+ypwhs starred chengzhengxin/groupsoftmax-simpledet 15 days ago
+chengzhengxin/groupsoftmax-simpledet
+GroupSoftmax cross entropy loss function for training with multiple different benchmark datasets
+
+ Python  81  Updated Oct 8
+
+@bclozel
+bclozel forked bclozel/rsocket-java from rsocket/rsocket-java 16 days ago
+rsocket/rsocket-java
+Java implementation of RSocket
+
+ Java  1.2k  1 issue needs help Updated Oct 9
+
+@yun-liu
+yun-liu starred D-X-Y/Awesome-NAS 16 days ago
+D-X-Y/Awesome-NAS
+A curated list of neural architecture search (NAS) resources.
+
+665  Updated Oct 10
+
+@tmoonlight
+tmoonlight forked tmoonlight/LiteDB from mbdavid/LiteDB 16 days ago
+mbdavid/LiteDB
+LiteDB - A .NET NoSQL Document Store in a single data file - https://www.litedb.org
+
+ C#  4.3k  Updated Oct 10
+
+@DiegoCatalano
+DiegoCatalano starred pedromassango/my_flutter_challenges 17 days ago
+pedromassango/my_flutter_challenges
+Flutter project containing all my flutter UI challenges
+
+ Dart  348  Updated Oct 9
+
+@lemire
+lemire starred google/highway 17 days ago
+google/highway
+Performance-portable SIMD with runtime dispatch
+
+ C++  138  Updated Oct 10
+
+@yun-liu
+yun-liu made yun-liu/file public 18 days ago
+yun-liu/file
+ Python  Updated Sep 29
+
+@cescoffier
+cescoffier created a repository cescoffier/pr 19 days ago
+cescoffier/pr
+Updated Sep 21
+
+@cescoffier
+cescoffier starred cescoffier/rxjava2-lab 20 days ago
+cescoffier/rxjava2-lab
+A lab about RX Java 2
+
+ Java  25  Updated Oct 4
+
+@nomagick
+nomagick starred apachecn/AiLearning 20 days ago
+apachecn/AiLearning
+AiLearning: 机器学习 - MachineLearning - ML、深度学习 - DeepLearning - DL、自然语言处理 NLP
+
+ Python  19.9k  Updated Oct 10
+
+@jmecn
+jmecn starred ffxiv-teamcraft/simulator 21 days ago
+ffxiv-teamcraft/simulator
+Crafting simulator for FINAL FANTASY XIV
+
+ TypeScript  6  Updated Oct 6
+
+@jindongwang
+jindongwang starred 2 repositories  22 days ago
+KeiraZhao/MDAN
+Demo code for the MDAN paper.
+
+ Python  30  Updated Oct 6
+
+@jindongwang
+jindongwang started following KeiraZhao 22 days ago
+KeiraZhao
+Han Zhao KeiraZhao
+PhD@MLD
+23 repositories 55 followers
+
+@Lakritzator
+Lakritzator starred LorenzCK/OnTopReplica 23 days ago
+LorenzCK/OnTopReplica
+A real-time always-on-top “replica” of a window of your choice (on Windows).
+
+ C#  721  2 issues need help Updated Oct 10
+
+@jindongwang
+jindongwang starred learnables/learn2learn 23 days ago
+learnables/learn2learn
+PyTorch Meta-learning Framework for Researchers
+
+ Python  468  Updated Oct 10
+
+@tmoonlight
+tmoonlight starred SciSharp/BotSharp 23 days ago
+SciSharp/BotSharp
+The Open Source AI Chatbot Platform Builder in 100% C# Running in .NET Core with Machine Learning algorithm.
+
+ C#  769  1 issue needs help Updated Oct 9
+
+@ypwhs
+ypwhs made ypwhs/string-art public 23 days ago
+ypwhs/string-art
+ Jupyter Notebook  2  Updated Sep 18
+
+@jindongwang
+jindongwang starred 3 repositories  24 days ago
+cupy/cupy
+NumPy-like API accelerated with CUDA
+
+ Python  3.6k  Updated Oct 10
+
+@nomagick
+nomagick starred zerosoul/chinese-colors 25 days ago
+zerosoul/chinese-colors
+cnartChinese traditional color cheatsheet online
+
+ JavaScript  842  2 issues need help Updated Oct 10
+
+@Lakritzator
+Lakritzator starred BluestormDNA/ProjectPSX 25 days ago
+BluestormDNA/ProjectPSX
+Experimental C# Playstation Emulator
+
+ C#  737  Updated Oct 10
+
+@jindongwang
+jindongwang starred nuno-faria/tiler 25 days ago
+nuno-faria/tiler
+construction_worker_man Build images with images
+
+ Python  3.4k  Updated Oct 10
+
+@ypwhs
+ypwhs starred brightmart/roberta_zh 25 days ago
+brightmart/roberta_zh
+RoBERTa中文预训练模型: RoBERTa for Chinese
+
+ Python  675  Updated Oct 10
+
+@ypwhs
+ypwhs starred koolshare/ledesoft 26 days ago
+koolshare/ledesoft
+ ASP  880  Updated Oct 10
+
+@yun-liu
+yun-liu starred hszhao/semseg 27 days ago
+hszhao/semseg
+Semantic Segmentation in Pytorch
+
+ Python  347  Updated Oct 10
+
+@cescoffier
+cescoffier forked 2 repositories  28 days ago
+Forked to cescoffier/reactive-service-b
+
+Emily-Jiang/reactive-service-b
+Reactive consumer
+
+ Java  1  Updated Sep 19
+
+@ypwhs
+ypwhs starred HCIILAB/Scene-Text-Recognition 28 days ago
+HCIILAB/Scene-Text-Recognition
+87  Updated Oct 9
+
+@kwhat
+kwhat forked kwhat/jquery-datatables from Munter/jquery-datatables 28 days ago
+Munter/jquery-datatables
+ HTML  Updated Sep 12
+
+@bclozel
+bclozel forked bclozel/spring-cloud-gateway-rsocket-sample from spencergibb/spring-cloud-gateway-rsocket-sample 29 days ago
+spencergibb/spring-cloud-gateway-rsocket-sample
+ Java  27  Updated Oct 9
+
+@jindongwang
+jindongwang starred 2 repositories  29 days ago
+ibarrond/Pyfhel
+PYthon For Homomorphic Encryption Libraries, perform encrypted computations such as sum, mult, scalar product or matrix multiplication in Python, w…
+
+ Python  83  1 issue needs help Updated Sep 30
+
+@ypwhs
+ypwhs starred zhangxiaosong18/FreeAnchor 29 days ago
+zhangxiaosong18/FreeAnchor
+FreeAnchor: Learning to Match Anchors for Visual Object Detection (NeurIPS 2019)
+
+ Python  493  Updated Oct 10
+
+@jklingen
+jklingen forked jklingen/tesseract.js-angular-app from jeromewu/tesseract.js-angular-app 29 days ago
+jeromewu/tesseract.js-angular-app
+An example app to show how to use tesseract.js in angular
+
+ TypeScript  3  Updated Oct 8
+
+@ngaut
+ngaut forked ngaut/decima-sim from hongzimao/decima-sim on Sep 10
+hongzimao/decima-sim
+Learning Scheduling Algorithms for Data Processing Clusters
+
+ Python  34  Updated Oct 10
+
+@jindongwang
+jindongwang starred 2 repositories  on Sep 10
+NVIDIA/apex
+A PyTorch Extension: Tools for easy mixed precision and distributed training in Pytorch
+
+ Python  2.6k  Updated Oct 10
+
+@kwhat
+kwhat starred 2 repositories  on Sep 10
+phan/phan
+Phan is a static analyzer for PHP. Phan prefers to avoid false-positives and attempts to prove incorrectness rather than correctness.
+
+ PHP  4.6k  28 issues need help Updated Oct 10
+
+@ypwhs
+ypwhs starred cython/cython on Sep 10
+cython/cython
+The most widely used Python to C compiler
+
+ Python  4.6k  65 issues need help Updated Oct 10
+
+@yun-liu
+yun-liu starred MarkMoHR/Awesome-Edge-Detection-Papers on Sep 10
+MarkMoHR/Awesome-Edge-Detection-Papers
+books A collection of edge/contour/boundary detection papers and toolbox.
+
+241  Updated Oct 10
+
+@Lakritzator
+Lakritzator starred 2 repositories  on Sep 10
+waliarubal/Jaya
+Cross platform file explorer application for Windows, Mac and Linux operating systems.
+
+ C#  32  Updated Oct 10
+
+@scutan90
+scutan90 forked scutan90/d2l-pytorch from dsgiitr/d2l-pytorch on Sep 9
+dsgiitr/d2l-pytorch
+This project reproduces the book Dive Into Deep Learning (www.d2l.ai), adapting the code from MXNet into PyTorch.
+
+ Jupyter Notebook  1.8k  Updated Oct 10
+
+@scutan90
+scutan90 starred dsgiitr/d2l-pytorch on Sep 9
+dsgiitr/d2l-pytorch
+This project reproduces the book Dive Into Deep Learning (www.d2l.ai), adapting the code from MXNet into PyTorch.
+
+ Jupyter Notebook  1.8k  Updated Oct 10
+
+@jmecn
+jmecn starred doxxx/ffxiv-craft-opt-web on Sep 9
+doxxx/ffxiv-craft-opt-web
+Web frontend for FFXIV Crafting Optimizer service.
+
+ JavaScript  137  Updated Oct 9
+
+@jindongwang
+jindongwang starred 2 repositories  on Sep 9
+mancinimassimiliano/pytorch_wbn
+PyTorch implementation of Weighted Batch-Normalization layers
+
+ Python  23  Updated Sep 15
+
+@bclozel
+bclozel forked bclozel/rsocket-js from rsocket/rsocket-js on Sep 9
+rsocket/rsocket-js
+JavaScript implementation of RSocket
+
+ JavaScript  172  1 issue needs help Updated Oct 9
+
+@yuandong-tian
+yuandong-tian starred facebookresearch/minirts on Sep 6
+facebookresearch/minirts
+We release dataset collected for our research, code that implement neural network models described in the paper, and scripts to reproduce all of ou…
+
+ C++  99  Updated Oct 8
+
+@OuYangLiang
+OuYangLiang created a repository OuYangLiang/streaming on Sep 6
+OuYangLiang/streaming
+flink example
+
+Updated Sep 14
+
+@chengenzhao
+chengenzhao starred caprica/vlcj on Sep 5
+caprica/vlcj
+Java framework for the vlc media player
+
+ Java  649  1 issue needs help Updated Oct 7
